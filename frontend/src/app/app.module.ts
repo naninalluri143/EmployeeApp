@@ -8,6 +8,7 @@ import { EmployeeUpdateComponent } from './employee-update/employee-update.compo
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

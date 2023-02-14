@@ -1,3 +1,20 @@
 <app-navbar></app-navbar>
-<p>we Are working on this page please come back later!</p>
-<button type="button" class="btn btn-outline-info" routerLink="/home">Go to home</button>
+<!-- this is ngFor directive -->
+<h2 *ngFor="let item of list">
+  <!-- this is interpolation -->
+  {{item.place}}
+  <!-- this is interpolation -->
+</h2>
+<!-- this is ngFor directive -->
+<!-- this is two way data binding -->
+ <input type="text" [(ngModel)]="name" placeholder="enter text">
+<p>{{name}}</p>
+<!-- this is two way data binding -->
+
+<!-- this is property binding  -->
+ <!-- <input type="text" [placeholder]="placeholderValue">  -->
+<!-- this is property binding  -->
+
+<!-- this is event binding  -->
+<button type="button" (click)="OnClick()"> show</button>
+<!-- this is event binding  -->

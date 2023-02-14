@@ -14,12 +14,14 @@
   </thead>
   <tbody>
     <tr *ngFor="let employee of employees">
+      <!--<div *ngIf="employee.id === 1">-->
       <td> {{employee.id}} </td>
       <td> {{ employee.firstname }} </td>
       <td> {{ employee.lastname }} </td>
       <td> {{ employee.gender }} </td>
       <td> {{ employee.emailid }} </td>
       <td> {{ employee.designation }} </td>
+    <!--</div>-->
       <td> <button type="button" class="btn btn-outline-primary" (click)="OnEdit()">Edit</button></td>
       <td> <button type="button" class="btn btn-outline-danger" (click)="OnDelete()">Delete</button></td>
     </tr>
